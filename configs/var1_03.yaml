@@ -1,0 +1,5 @@
+n_real_data_points: 2048
+simulator_configs:
+  phi: 0.99
+  corr_weight: 0.5
+  dim: 3

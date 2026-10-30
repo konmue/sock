@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sock"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = ["numpy", "torch>=2.0"]
+
+[project.optional-dependencies]
+train = ["matplotlib", "pyyaml", "tqdm", "typer"]
+notebooks = ["ipykernel", "ipython"]
+wandb = ["wandb"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
